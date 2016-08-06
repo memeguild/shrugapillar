@@ -18,20 +18,30 @@ export default class Shrugapillar {
      *
      * @param {number} options.length=1 The number of body elements that should
      *      be rendered.
+     * @param {boolean} options.monospace=false Whether or not to use the
+     *      shrugapillars monospace definition (if available).
      *
      * @return {string}
      */
-    render({length = 1} = {}){
-        const shrugapillar = [
-            this.definiton_.antenna,
-            this.definiton_.head,
-        ];
+    render(options = {}){
+        options.length = !options.length || options.length < 1 ?
+                1 : options.length;
 
-        for (var i = 0; i < length; i++){
-            shrugapillar.push(this.definiton_.body);
+        let parts = this.definiton_;
+        if (options.monospace && this.definiton_.monospace){
+            parts = this.definiton_.monospace;
         }
 
-        shrugapillar.push(this.definiton_.booty);
+        const shrugapillar = [
+            parts.antenna,
+            parts.head,
+        ];
+
+        for (var i = 0; i < options.length; i++){
+            shrugapillar.push(parts.body);
+        }
+
+        shrugapillar.push(parts.booty);
 
         return shrugapillar.join('\n');
     }
