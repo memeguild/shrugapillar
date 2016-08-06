@@ -33,7 +33,7 @@ export default class Shrugapillar {
         }
 
         const shrugapillar = [
-            parts.antenna,
+            parts.antennae,
             parts.head,
         ];
 
