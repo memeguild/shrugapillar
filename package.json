@@ -4,7 +4,8 @@
   "description": "The shrugapillar is to be used in a scenario in which one believes a matter will eventually escalate to a problem but that issue will still not be their problem. Though one has not shrugged off the potential of the issue yet, it is known that the matter will cocoon and be reborn as a full blow problem that they will still not care about.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --config webpack.dev.js"
+    "build": "webpack --config webpack.dev.js",
+    "watch": "webpack --watch --config webpack.dev.js"
   },
   "keywords": [
     "shrug",
