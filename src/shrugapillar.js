@@ -9,7 +9,7 @@ export default class Shrugapillar {
      *
      * @return {Object} A shrugapillar definition.
      */
-    getDefiniton(){
+    getDefinition(){
         return Object.assign({}, this.definiton_);
     }
 
@@ -18,11 +18,7 @@ export default class Shrugapillar {
      *
      * @param {number} options.length=1 The number of body elements that should
      *      be rendered.
-     * @param {boolean} options.monospace=false Whether or not to use the
-     *      shrugapillars monospace definition (if available).
-     * @param {boolean} options.html=false Whether or to format the shrugapillar
-     *      for use in html files (replaces ever other space with &nbsp; to
-     *      avoid whitespace collapsing).
+     * @param {boolean} options.type='html' One of 'html', or 'monospace'.
      *
      * @return {string}
      */
@@ -30,9 +26,15 @@ export default class Shrugapillar {
         options.length = !options.length || options.length < 1 ?
                 1 : options.length;
 
-        let parts = this.definiton_;
-        if (options.monospace && this.definiton_.monospace){
-            parts = this.definiton_.monospace;
+        let type = options.type || 'html';
+        let parts;
+        switch (type){
+            case 'html':
+                parts = this.definiton_.html;
+                break;
+            case 'monospace':
+                parts = this.definiton_.monospace;
+                break;
         }
 
         let shrugapillar = [
@@ -45,7 +47,7 @@ export default class Shrugapillar {
         // If html output is requested and we are not formatting monospace then
         // replace every other space with a &nbsp; character to avoid whitespace
         // collapsing.
-        if (options.html && !options.monospace){
+        if (type === 'html'){
             shrugapillar = shrugapillar.map(part => {
                 return part.replace(/  /g, ' &nbsp;');
             });

@@ -52,10 +52,12 @@ export function register(...args){
 register({
     species: `marcinekae`,
     commonName: `Shrugapillar`,
-    antennae: `   ᕙ  ᕗ`,
-    head: `¯\\_(ツ)_/¯`,
-    body: `¯\\_(    )_/¯`,
-    booty: `¯\\_(ˍˍˍ)_/¯`,
+    html: {
+        antennae:   `   ᕙ  ᕗ`,
+        head:       `¯\\_(ツ)_/¯`,
+        body:       `¯\\_(    )_/¯`,
+        booty:      `¯\\_(ˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ ᕗ`,
         head:       `¯\\_(ツ)_/¯`,
@@ -65,10 +67,12 @@ register({
 }, {
     species: `inflatus`,
     commonName: `Smugapillar`,
-    antennae: `   ᕙ            ᕗ`,
-    head: `¯\\_(⌣̯̀⌣́)_/¯`,
-    body: `¯\\_(             )_/¯`,
-    booty: `¯\\_(ˍˍˍˍˍˍˍˍˍ)_/¯`,
+    html: {
+        antennae:   `   ᕙ            ᕗ`,
+        head:       `¯\\_(⌣̯̀⌣́)_/¯`,
+        body:       `¯\\_(             )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍˍˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `  ᕙ      ᕗ`,
         head:       `¯\\_(⌣̯̀⌣́)_/¯`,
@@ -78,10 +82,12 @@ register({
 }, {
     species: `incertus`,
     commonName: `Unsureapillar`,
-    antennae: `   ᕙ    ᕗ`,
-    head: `¯\\_(º_o)_/¯`,
-    body: `¯\\_(     )_/¯`,
-    booty: `¯\\_(ˍˍˍ)_/¯`,
+    html: {
+        antennae:   `   ᕙ    ᕗ`,
+        head:       `¯\\_(º_o)_/¯`,
+        body:       `¯\\_(     )_/¯`,
+        booty:      `¯\\_(ˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ  ᕗ`,
         head:       `¯\\_(º_o)_/¯`,
@@ -91,10 +97,12 @@ register({
 }, {
     species: `ignavia`,
     commonName: `Apathetapillar`,
-    antennae: `   ᕙ     ᕗ`,
-    head: `¯\\_(´-｀)_/¯`,
-    body: `¯\\_(       )_/¯`,
-    booty: `¯\\_(ˍˍˍˍˍ)_/¯`,
+    html: {
+        antennae: `   ᕙ     ᕗ`,
+        head: `¯\\_(´-｀)_/¯`,
+        body: `¯\\_(       )_/¯`,
+        booty: `¯\\_(ˍˍˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ   ᕗ`,
         head:       `¯\\_(´-｀)_/¯`,
@@ -104,10 +112,12 @@ register({
 }, {
     species: `indignati`,
     commonName: `Indignapillar`,
-    antennae: `    ༽     ༼`,
-    head: `¯\\_(ಠ_ಠ)_/¯`,
-    body: `¯\\_(       )_/¯`,
-    booty: `¯\\_(ˍˍˍˍˍ)_/¯`,
+    html: {
+        antennae:   `    ༽     ༼`,
+        head:       `¯\\_(ಠ_ಠ)_/¯`,
+        body:       `¯\\_(       )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ༽   ༼`,
         head:       `¯\\_(ಠ_ಠ)_/¯`,
@@ -117,10 +127,12 @@ register({
 }, {
     species: `contentus`,
     commonName: `Contentapillar`,
-    antennae: `     ᕙ     ᕗ`,
-    head: `¯\\_(◉‿◉)_/¯`,
-    body: `¯\\_(          )_/¯`,
-    booty: `¯\\_(ˍˍˍˍˍˍˍ)_/¯`,
+    html: {
+        antennae:   `     ᕙ     ᕗ`,
+        head:       `¯\\_(◉‿◉)_/¯`,
+        body:       `¯\\_(          )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ   ᕗ`,
         head:       `¯\\_(◉‿◉)_/¯`,
@@ -130,10 +142,12 @@ register({
 }, {
     species: `exasperentur`,
     commonName: `Desuapillar`,
-    antennae: `     ᕙ           ᕗ`,
-    head: `¯\\_( ͡° ͜ʖ ͡° )_/¯`,
-    body: `¯\\_(                )_/¯`,
-    booty: `¯\\_(ˍˍˍˍˍˍˍˍˍˍˍ)_/¯`,
+    html: {
+        antennae:   `     ᕙ           ᕗ`,
+        head:       `¯\\_( ͡° ͜ʖ ͡° )_/¯`,
+        body:       `¯\\_(                )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍˍˍˍˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ       ᕗ`,
         head:       `¯\\_( ͡° ͜ʖ ͡° )_/¯`,
@@ -144,10 +158,12 @@ register({
     species: `omnipotentem`,
     commonName: `Illumipillar`,
     description: `Knows all. Sees all. Controls all.`,
-    antennae: `     ᕙ      ᕗ`,
-    head: `¯\\_(👁)_/¯`,
-    body: `¯\\_(     )_/¯`,
-    booty: `¯\\_(ˍˍˍ)_/¯`,
+    html: {
+        antennae:   `   ᕙ   ᕗ`,
+        head:       `¯\\_(👁)_/¯`,
+        body:       `¯\\_(     )_/¯`,
+        booty:      `¯\\_(ˍˍˍ)_/¯`,
+    },
     monospace: {
         antennae:   `   ᕙ ᕗ`,
         head:       `¯\\_(👁)_/¯`,
@@ -157,10 +173,12 @@ register({
 }, {
     species: `lepidoptera`,
     commonName: `Concealapillar`,
-    antennae: `    ༽        ༼`,
-    head: `¯\\_(ಥ﹏ಥ)_/¯`,
-    body: `¯\\_(          )_/¯`,
-    booty: `¯\\_( ____ )_/¯`,
+    html: {
+        antennae:   `    ༽        ༼`,
+        head:       `¯\\_(ಥ﹏ಥ)_/¯`,
+        body:       `¯\\_(          )_/¯`,
+        booty:      `¯\\_( ____ )_/¯`,
+    },
     monospace: {
         antennae:   `   ༽    ༼`,
         head:       `¯\\_(ಥ﹏ಥ)_/¯`,
