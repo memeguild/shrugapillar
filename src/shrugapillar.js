@@ -20,6 +20,9 @@ export default class Shrugapillar {
      *      be rendered.
      * @param {boolean} options.monospace=false Whether or not to use the
      *      shrugapillars monospace definition (if available).
+     * @param {boolean} options.html=false Whether or to format the shrugapillar
+     *      for use in html files (replaces ever other space with &nbsp; to
+     *      avoid whitespace collapsing).
      *
      * @return {string}
      */
@@ -32,16 +35,21 @@ export default class Shrugapillar {
             parts = this.definiton_.monospace;
         }
 
-        const shrugapillar = [
+        let shrugapillar = [
             parts.antennae,
             parts.head,
         ];
-
-        for (var i = 0; i < options.length; i++){
-            shrugapillar.push(parts.body);
-        }
-
+        for (var i = 0; i < options.length; i++) shrugapillar.push(parts.body);
         shrugapillar.push(parts.booty);
+
+        // If html output is requested and we are not formatting monospace then
+        // replace every other space with a &nbsp; character to avoid whitespace
+        // collapsing.
+        if (options.html && !options.monospace){
+            shrugapillar = shrugapillar.map(part => {
+                return part.replace(/  /g, ' &nbsp;');
+            });
+        }
 
         return shrugapillar.join('\n');
     }
