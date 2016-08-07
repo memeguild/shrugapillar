@@ -18,7 +18,8 @@ export default class Shrugapillar {
      *
      * @param {number} options.length=1 The number of body elements that should
      *      be rendered.
-     * @param {boolean} options.type='html' One of 'html', or 'monospace'.
+     * @param {boolean} options.type='html' One of 'html', 'slack', or
+     *      'monospace'.
      *
      * @return {string}
      */
@@ -27,16 +28,12 @@ export default class Shrugapillar {
                 1 : options.length;
 
         let type = options.type || 'html';
-        let parts;
-        switch (type){
-            case 'html':
-                parts = this.definiton_.html;
-                break;
-            case 'monospace':
-                parts = this.definiton_.monospace;
-                break;
+        if (!this.definiton_[type]){
+            console.warning(`Unknown type "${type}", defaulting to "html"`);
+            type = 'html';
         }
 
+        let parts = this.definiton_[type];
         let shrugapillar = [
             parts.antennae,
             parts.head,
@@ -51,6 +48,12 @@ export default class Shrugapillar {
             shrugapillar = shrugapillar.map(part => {
                 return part.replace(/  /g, ' &nbsp;');
             });
+        }
+
+        // To prevent slack from trimming leading whitespace, add a small 'ؘ'
+        // character to the start of the shrugapillar .
+        if (type === 'slack'){
+            shrugapillar[0] = `ؘ${shrugapillar[0]}`;
         }
 
         return shrugapillar.join('\n');

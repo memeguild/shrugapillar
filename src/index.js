@@ -64,6 +64,12 @@ register({
         body:       `¯\\_(  )_/¯`,
         booty:      `¯\\_(__)_/¯`,
     },
+    slack: {
+        antennae:   `   ᕙ  ᕗ`,
+        head:       `¯\\_(ツ)_/¯`,
+        body:       `¯\\_(    )_/¯`,
+        booty:      `¯\\_(__)_/¯`,
+    },
 }, {
     species: `inflatus`,
     commonName: `Smugapillar`,
@@ -78,6 +84,12 @@ register({
         head:       `¯\\_(⌣̯̀⌣́)_/¯`,
         body:       `¯\\_(     )_/¯`,
         booty:      `¯\\_(_____)_/¯`,
+    },
+    slack: {
+        antennae:   `    ᕙ   ᕗ`,
+        head:       `¯\\_(⌣̯̀⌣́)_/¯`,
+        body:       `¯\\_(       )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍ)_/¯`,
     },
 }, {
     species: `incertus`,
@@ -94,6 +106,12 @@ register({
         body:       `¯\\_(   )_/¯`,
         booty:      `¯\\_(___)_/¯`,
     },
+    slack: {
+        antennae:   `    ᕙ  ᕗ`,
+        head:       `¯\\_(º_o)_/¯`,
+        body:       `¯\\_(     )_/¯`,
+        booty:      `¯\\_(ˍˍˍ)_/¯`,
+    },
 }, {
     species: `ignavia`,
     commonName: `Apathetapillar`,
@@ -108,6 +126,12 @@ register({
         head:       `¯\\_(´-｀)_/¯`,
         body:       `¯\\_(    )_/¯`,
         booty:      `¯\\_(____)_/¯`,
+    },
+    slack: {
+        antennae: `   ᕙ     ᕗ`,
+        head: `¯\\_(´-｀)_/¯`,
+        body: `¯\\_(       )_/¯`,
+        booty: `¯\\_(ˍˍˍˍˍ)_/¯`,
     },
 }, {
     species: `indignati`,
@@ -124,6 +148,12 @@ register({
         body:       `¯\\_(   )_/¯`,
         booty:      `¯\\_(___)_/¯`,
     },
+    slack: {
+        antennae:   `    ༽      ༼`,
+        head:       `¯\\_(ಠ_ಠ)_/¯`,
+        body:       `¯\\_(       )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍ)_/¯`,
+    },
 }, {
     species: `contentus`,
     commonName: `Contentapillar`,
@@ -139,6 +169,12 @@ register({
         body:       `¯\\_(    )_/¯`,
         booty:      `¯\\_(____)_/¯`,
     },
+    slack: {
+        antennae:   `     ᕙ      ᕗ`,
+        head:       `¯\\_(◉‿◉)_/¯`,
+        body:       `¯\\_(           )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍˍˍ)_/¯`,
+    },
 }, {
     species: `exasperentur`,
     commonName: `Desuapillar`,
@@ -153,6 +189,12 @@ register({
         head:       `¯\\_( ͡° ͜ʖ ͡° )_/¯`,
         body:       `¯\\_(        )_/¯`,
         booty:      `¯\\_(________)_/¯`,
+    },
+    slack: {
+        antennae:   `   ᕙ          ᕗ`,
+        head:       `¯\\_( ͡° ͜ʖ ͡° )_/¯`,
+        body:       `¯\\_(            )_/¯`,
+        booty:      `¯\\_(ˍˍˍˍˍˍˍˍ)_/¯`,
     },
 }, {
     species: `omnipotentem`,
@@ -170,6 +212,12 @@ register({
         body:       `¯\\_(  )_/¯`,
         booty:      `¯\\_(__)_/¯`,
     },
+    slack: {
+        antennae:   `   ᕙ    ᕗ`,
+        head:       `¯\\_(👁)_/¯`,
+        body:       `¯\\_(     )_/¯`,
+        booty:      `¯\\_(ˍˍˍ)_/¯`,
+    },
 }, {
     species: `lepidoptera`,
     commonName: `Concealapillar`,
@@ -177,12 +225,18 @@ register({
         antennae:   `    ༽        ༼`,
         head:       `¯\\_(ಥ﹏ಥ)_/¯`,
         body:       `¯\\_(          )_/¯`,
-        booty:      `¯\\_( ____ )_/¯`,
+        booty:      `¯\\_(_____)_/¯`,
     },
     monospace: {
         antennae:   `   ༽    ༼`,
         head:       `¯\\_(ಥ﹏ಥ)_/¯`,
         body:       `¯\\_(    )_/¯`,
         booty:      `¯\\_(____)_/¯`,
+    },
+    slack: {
+        antennae:   `    ༽         ༼`,
+        head:       `¯\\_(ಥ﹏ಥ)_/¯`,
+        body:       `¯\\_(          )_/¯`,
+        booty:      `¯\\_(______)_/¯`,
     },
 });
