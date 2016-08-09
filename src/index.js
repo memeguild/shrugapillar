@@ -39,12 +39,12 @@ export function register(...args){
     args.forEach(shrugapillar => {
         // TODO(ndrwhr): validate incoming shrugapillar.
         SHRUGAPILLAR_DEFINITIONS.push(Object.assign({}, {
-            regnum: `mememalia`,
-            phylum: `arthropoda`,
-            classis: `insecta`,
-            ordo: `lepidoptera`,
-            familia: `nymphalidae`,
-            genus: `depulso`,
+            regnum: `Mememalia`,
+            phylum: `Arthropoda`,
+            classis: `Insecta`,
+            ordo: `Lepidoptera`,
+            familia: `Nymphalidae`,
+            genus: `Depulso`,
         }, shrugapillar));
     });
 }
