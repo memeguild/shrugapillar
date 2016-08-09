@@ -33,6 +33,9 @@ export default class Shrugapillar {
             type = 'html';
         }
 
+        let lineEnd = '\n';
+        if (type === 'html') lineEnd = '<br/>';
+
         let parts = this.definiton_[type];
         let shrugapillar = [
             parts.antennae,
@@ -56,6 +59,6 @@ export default class Shrugapillar {
             shrugapillar[0] = `ؘ${shrugapillar[0]}`;
         }
 
-        return shrugapillar.join('\n');
+        return shrugapillar.join(lineEnd);
     }
 }
