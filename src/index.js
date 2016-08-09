@@ -53,7 +53,7 @@ register({
     species: `marcinekae`,
     commonName: `Shrugapillar`,
     html: {
-        antennae:   `   ᕙ  ᕗ`,
+        antennae:   `    ᕙ  ᕗ`,
         head:       `¯\\_(ツ)_/¯`,
         body:       `¯\\_(    )_/¯`,
         booty:      `¯\\_(ˍˍˍ)_/¯`,
