@@ -1,0 +1,60 @@
+@import "variables.css";
+
+.meaning {
+    width: var(--modal-width);
+    margin: 0 auto;
+    color: var(--light-font-color);
+    padding: 0 var(--double-padding);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.meaning__ul {
+    padding-left: var(--standard-padding);
+    margin-bottom: var(--standard-padding);
+}
+
+.meaning__li {
+    list-style: disc;
+    margin-left: var(--double-padding);
+    margin-bottom: var(--half-padding);
+}
+
+.meaning__p {
+    padding: 0 var(--standard-padding);
+    margin-bottom: var(--standard-padding);
+}
+
+.meaning__p--center {
+    text-align: center;
+}
+
+.meaning__header {
+    font-size: 20px;
+    margin-bottom: var(--standard-padding);
+}
+
+.meaning__quote {
+    padding: 0 var(--standard-padding);
+    margin-bottom: var(--double-padding);
+}
+
+.meaning__quote-content {
+    padding-left: var(--standard-padding);
+    border-left: 5px solid var(--light-font-color);
+}
+
+.meaning__quote-footer {
+    margin-top: var(--standard-padding);
+    text-align: right;
+}
+
+.meaning__spacer {
+    flex: 1;
+}
+
+.meaning__credit {
+    text-align: center;
+    margin: var(--double-padding) 0 var(--standard-padding);
+}

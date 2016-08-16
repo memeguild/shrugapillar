@@ -4,7 +4,9 @@
   "description": "The shrugapillar is to be used in a scenario in which one believes a matter will eventually escalate to a problem but that issue will still not be their problem. Though one has not shrugged off the potential of the issue yet, it is known that the matter will cocoon and be reborn as a full blow problem that they will still not care about.",
   "main": "dist/common.js",
   "scripts": {
-    "build": "webpack --config conf/webpack.js",
+    "build": "npm run build:js; npm run build:css",
+    "build:css": "postcss --config conf/postcss.config.js",
+    "build:js": "webpack --config conf/webpack.js",
     "prepublish": "npm run build",
     "watch": "webpack --watch --config conf/webpack.js"
   },
@@ -16,9 +18,19 @@
   "author": "@ndrwhr",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "cssnano": "^3.7.4",
+    "postcss-calc": "^5.3.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^8.1.2",
+    "postcss-inline-svg": "^2.0.1",
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "redux": "^3.5.2"
   }
 }

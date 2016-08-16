@@ -1,0 +1,49 @@
+@import "variables.css";
+
+.head-control {
+    position: relative;
+    width: 100%;
+    height: var(--input-height);
+    margin-bottom: var(--standard-padding);
+    border-radius: var(--standard-border-radius);
+    overflow: hidden;
+}
+
+.head-control__select {
+    font-family: arial, san-serif;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--input-background);
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: var(--input-height);
+    color: var(--light-font-color);
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 100ms ease-out;
+}
+
+.head-control::after {
+    position: absolute;
+    content: '';
+    top: var(--select-arrow-size-offset);
+    right: var(--select-arrow-size-offset);
+    width: 0;
+    height: 0;
+    border-left: var(--select-arrow-size) solid transparent;
+    border-right: var(--select-arrow-size) solid transparent;
+    border-top: var(--select-arrow-size) solid white;
+
+    pointer-events: none;
+}
+
+.head-control:hover {
+    background: var(--input-hover-background);
+}
+
+.head-control:active {
+    background: var(--input-active-background);
+}

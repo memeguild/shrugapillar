@@ -1,0 +1,18 @@
+@import "head-control.css";
+@import "length-control.css";
+@import "meaning.css";
+@import "modal.css";
+@import "output-type-control.css";
+@import "output.css";
+@import "variables.css";
+
+.app {
+    position: relative;
+    background: linear-gradient(115deg, var(--app-gradient-start) 0%,
+            var(--app-gradient-end) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    z-index: 0;
+    padding: 0 var(--standard-padding);
+}

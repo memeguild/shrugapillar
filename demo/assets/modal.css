@@ -1,0 +1,49 @@
+@import "variables.css";
+
+.modal {
+    width: var(--modal-width);
+    background:  rgba(255, 255, 255, 0.9);
+    border-radius: var(--standard-border-radius);
+    padding: var(--double-padding);
+    display: flex;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.1);
+    margin: var(--quadruple-padding) auto;
+}
+
+.modal__controls {
+    flex: 6;
+    padding-right: var(--double-padding);
+}
+
+.modal__output {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+.modal__controls-header {
+    font-size: 15px;
+    margin-bottom: var(--standard-padding);
+}
+
+.modal__controls-p {
+    font-size: 13px;
+    margin-bottom: var(--standard-padding);
+}
+
+.modal__controls-p:empty {
+    display: none;
+}
+
+.modal__output-info {
+    padding-top: var(--standard-padding);
+    font-size: 13px;
+}
+
+.modal__output-info:empty {
+    display: none;
+}
+
+.modal__output-info--warning {
+    color: #D32F2F;
+}
