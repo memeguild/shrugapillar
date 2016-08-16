@@ -1,2 +1,4 @@
-lib/
+dist/
+demo/dist/
 node_modules/
+.DS_Store
