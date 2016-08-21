@@ -1,0 +1,46 @@
+/**
+ * Common colors. Most of these colors are from google's material design guide.
+ */
+:root {
+    --pink-200: #F48FB1;
+    --pink-300: #F06292;
+    --pink-400: #EC407A;
+    --pink-500: #e91e63;
+    --pink-a200: #FF4081;
+
+    --pink-300-alpha-70: rgba(240, 98, 146, 0.7);
+
+    --deep-purple-500: #673AB7;
+
+    --blue-grey-800: #37474F;
+}
+
+:root {
+    --modal-width: 600px;
+
+    --dark-font-color: var(--blue-grey-800);
+    --light-font-color: rgba(255, 255, 255, 0.9);
+
+    --app-gradient-start: var(--pink-500);
+    --app-gradient-end: var(--deep-purple-500);
+
+    --standard-padding: 20px;
+    --half-padding: 10px;
+    --double-padding: 40px;
+    --quadruple-padding: 80px;
+
+    --standard-border-radius: 5px;
+
+    --input-height: 40px;
+    --input-background: var(--pink-300);
+    --input-hover-background: var(--pink-a200);
+    --input-active-background: var(--pink-400);
+    --input-inactive-background: var(--pink-200);
+
+    --select-arrow-size: 6px;
+    --select-arrow-size-offset: calc(calc(var(--input-height) -
+            var(--select-arrow-size)) / 2);
+
+    --selection-text-color: var(--light-font-color);
+    --selection-background-color: var(--pink-300-alpha-70);
+}

@@ -1,0 +1,50 @@
+@import "variables.css";
+
+.length-control {
+    display: flex;
+    margin-bottom: var(--standard-padding);
+    align-items: center;
+}
+
+.length-control__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--input-background);
+    border-radius: var(--standard-border-radius);
+    height: var(--input-height);
+    color: var(--light-font-color);
+    border: none;
+    outline: none;
+    flex: 1;
+    cursor: pointer;
+    transition: background-color 100ms ease-out;
+}
+
+.length-control__button:hover {
+    background: var(--input-hover-background);
+}
+
+.length-control__button:active {
+    background: var(--input-active-background);
+}
+
+.length-control__button::after {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    content: '';
+}
+
+.length-control__button--increase::after {
+    background: svg-load("./images/increase.svg");
+}
+
+.length-control__button--decrease::after {
+    background: svg-load("./images/decrease.svg");
+}
+
+.length-control__output {
+    flex: 2;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+@import "variables.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: helvetica, arial, san-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.4;
+    color:var(--dark-font-color);
+    min-height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+::selection {
+    background: var(--selection-background-color);
+    color: var(--selection-text-color);
+}

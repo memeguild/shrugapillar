@@ -1,0 +1,47 @@
+@import "variables.css";
+
+.output-type-control {
+    display: flex;
+}
+
+.output-type-control__type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: var(--input-height);
+}
+
+.output-type-control__type:not(:last-child) {
+    margin-right: 10px;
+}
+
+.output-type-control__type-label {
+    color: var(--light-font-color);
+    display: inline-block;
+    background: var(--input-inactive-background);
+    border-radius: var(--standard-border-radius);
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    line-height: var(--input-height);
+    transition: background-color 100ms ease-out;
+}
+
+.output-type-control__type-label:hover,
+.output-type-control__type-input:checked + .output-type-control__type-label:hover {
+    background: var(--input-hover-background);
+}
+
+.output-type-control__type-label:active {
+    background: var(--input-active-background);
+}
+
+.output-type-control__type-input:checked + .output-type-control__type-label {
+    background: var(--input-background);
+}
+
+.output-type-control__type-input {
+    display: none;
+}

@@ -1,0 +1,27 @@
+@import "variables.css";
+
+.output {
+    font-family: arial, san-serif;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid var(--input-background);
+    border-radius: var(--standard-border-radius);
+    padding: var(--standard-padding);
+    resize: none;
+    white-space: nowrap;
+}
+
+.output--monospace {
+    font-family: courier;
+}
+
+.output + .modal__output-info--instructions {
+    display: none;
+}
+
+.output:focus + .modal__output-info--instructions {
+    display: block;
+}
