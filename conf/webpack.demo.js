@@ -30,17 +30,6 @@ const BASE_CONFIG = {
 };
 
 module.exports = [Object.assign({}, BASE_CONFIG, {
-    // Output a browser version of the library in the demo dist folder.
-    entry: [
-        path.resolve(__dirname, '../src/index.js'),
-    ],
-    output: {
-        path: path.join(__dirname, '../demo/dist'),
-        filename: 'shrugapillar.js',
-        library: 'Shrugapillar',
-        libraryTarget: 'var',
-    },
-}), Object.assign({}, BASE_CONFIG, {
     // Compile the demo source.
     entry: [
         path.resolve(__dirname, '../demo/src/index.js'),
