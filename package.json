@@ -1,7 +1,18 @@
 {
   "name": "shrugapillar",
   "version": "1.0.0",
-  "description": "The shrugapillar is to be used in a scenario in which one believes a matter will eventually escalate to a problem but that issue will still not be their problem. Though one has not shrugged off the potential of the issue yet, it is known that the matter will cocoon and be reborn as a full blow problem that they will still not care about.",
+  "description": "A library for generating shrugapillars.",
+  "author": "@ndrwhr",
+  "keywords": [
+    "shrug",
+    "shrugapillar",
+    "meme"
+  ],
+  "license": "MIT",
+  "repository": "memeguild/shrugapillar",
+  "bugs": {
+    "url": "https://github.com/memeguild/shrugapillar/issues"
+  },
   "main": "dist/common.js",
   "scripts": {
     "build": "npm run build:js; npm run build:css",
@@ -11,13 +22,6 @@
     "prepublish": "npm run build",
     "watch": "webpack --watch --config conf/webpack.js"
   },
-  "keywords": [
-    "shrug",
-    "shrugapillar",
-    "meme"
-  ],
-  "author": "@ndrwhr",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.11.4",
