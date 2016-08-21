@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = [{
     entry: [
-        './lib/index.js',
+        path.resolve(__dirname, '../src/index.js'),
     ],
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
@@ -18,7 +18,7 @@ module.exports = [{
         }, {
             test: /\.js$/,
             include: [
-                path.resolve(__dirname, '../lib'),
+                path.resolve(__dirname, '../src'),
             ],
             loader: 'babel-loader',
             query: {
@@ -30,7 +30,7 @@ module.exports = [{
         extensions: ['', '.js'],
     },
     output: {
-        path: path.join(__dirname, '../dist'),
+        path: path.join(__dirname, '../lib'),
         filename: 'common.js',
         libraryTarget: 'commonjs2',
     },

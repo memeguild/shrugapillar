@@ -15,7 +15,7 @@ const BASE_CONFIG = {
         }, {
             test: /\.js$/,
             include: [
-                path.resolve(__dirname, '../lib'),
+                path.resolve(__dirname, '../src'),
                 path.resolve(__dirname, '../demo/src'),
             ],
             loader: 'babel-loader',
@@ -32,7 +32,7 @@ const BASE_CONFIG = {
 module.exports = [Object.assign({}, BASE_CONFIG, {
     // Output a browser version of the library in the demo dist folder.
     entry: [
-        path.resolve(__dirname, '../lib/index.js'),
+        path.resolve(__dirname, '../src/index.js'),
     ],
     output: {
         path: path.join(__dirname, '../demo/dist'),
