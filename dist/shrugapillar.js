@@ -178,8 +178,7 @@ var Shrugapillar =
 	    booty: '¯\\_(ˍˍˍˍˍ)_/¯'
 	}), _register2), (_register3 = {
 	    species: 'incertus',
-	    commonName: 'Unsureapillar',
-	    description: 'Also known as the idontknowlolapillar.'
+	    commonName: 'Unsureapillar'
 	}, _defineProperty(_register3, TYPES.PLAIN, {
 	    antennae: '   ᕙ    ᕗ',
 	    head: '¯\\_(º_o)_/¯',
@@ -202,8 +201,7 @@ var Shrugapillar =
 	    booty: '¯\\_(ˍˍˍ)_/¯'
 	}), _register3), (_register4 = {
 	    species: 'ignavia',
-	    commonName: 'Apathetapillar',
-	    description: 'The Apathetapillar is in a constant state of indifference. Known for having an absence of interest in or concern about emotional, social, spiritual, philosophical and/or physical life and the world.'
+	    commonName: 'Apathetapillar'
 	}, _defineProperty(_register4, TYPES.PLAIN, {
 	    antennae: '   ᕙ     ᕗ',
 	    head: '¯\\_(´-｀)_/¯',
@@ -249,8 +247,7 @@ var Shrugapillar =
 	    booty: '¯\\_(ˍˍˍˍˍ)_/¯'
 	}), _register5), (_register6 = {
 	    species: 'contentus',
-	    commonName: 'Contentapillar',
-	    description: 'The Contentapillar accepts every situation as it is.'
+	    commonName: 'Contentapillar'
 	}, _defineProperty(_register6, TYPES.PLAIN, {
 	    antennae: '     ᕙ     ᕗ',
 	    head: '¯\\_(◉‿◉)_/¯',
