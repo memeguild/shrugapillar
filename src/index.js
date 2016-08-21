@@ -1,5 +1,7 @@
 import {createStore} from 'redux';
 
+import * as Shrugapillar from '../../src';
+
 import * as Actions from './actions';
 import reducer from './reducer';
 

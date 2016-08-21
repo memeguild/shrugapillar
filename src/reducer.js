@@ -1,3 +1,5 @@
+import * as Shrugapillar from '../../src';
+
 import * as Actions from './actions';
 
 const DEFAULT_STATE = {

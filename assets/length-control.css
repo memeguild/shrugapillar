@@ -37,11 +37,11 @@
 }
 
 .length-control__button--increase::after {
-    background: svg-load("./images/increase.svg");
+    background: svg-load("images/increase.svg");
 }
 
 .length-control__button--decrease::after {
-    background: svg-load("./images/decrease.svg");
+    background: svg-load("images/decrease.svg");
 }
 
 .length-control__output {
