@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/memeguild/shrugapillar/issues"
   },
-  "main": "dist/common.js",
+  "main": "lib/common.js",
   "scripts": {
     "build": "npm run build:js; npm run build:css",
     "build:css": "postcss --config conf/postcss.config.js",
