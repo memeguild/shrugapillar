@@ -34,9 +34,9 @@
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.2",
     "postcss-inline-svg": "^2.0.1",
+    "redux": "^3.5.2",
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "redux": "^3.5.2"
   }
 }
